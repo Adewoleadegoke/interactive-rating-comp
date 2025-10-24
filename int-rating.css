@@ -1,0 +1,121 @@
+body {
+    background: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+    padding: 0 23px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 22px;
+    font-size: 25px;
+}
+
+p {
+    color: hsl(217, 12%, 63%);
+    font-weight: 400;
+    margin-bottom: 24px;
+    line-height: 1.5;
+    font-size: 15px;
+}
+/* RATING CARD DISPLAY */
+.rating-card {
+    background: hsl(213, 19%, 18%);
+    padding: 24px 23px 29px 25px;
+    border-radius: 20px;
+    max-width: 350px;
+}
+
+.button-row {
+    display: flex;
+    flex-direction: row;
+    column-gap: 17px;
+    margin-bottom: 25px;
+    justify-content: center;
+}
+
+.button-row button {
+    background: hsla(217, 12%, 63%, 0.3);
+    color: hsl(217, 12%, 63%);
+    height: 43px;
+    width: 43px;
+    border: none;
+    border-radius: 300px;
+  
+}
+
+.button-row button:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(213, 19%, 18%);
+}
+.button-row button:active {
+    background-color: white;
+    color: hsl(213, 19%, 18%);
+}
+
+.submit-btn {
+    -webkit-border-radius: 28; 
+    -moz-border-radius: 28; 
+    border-radius: 28px; 
+    color: #232A34; 
+    font-size: 20px; 
+    background: #ff6f0f; 
+    padding: 10px 20px 10px 20px; 
+    text-decoration-style: ;
+    display: block;
+    border: none;
+    width: 100%;
+    font-weight: 700;
+}
+
+.submit.btn:hover {
+    background-color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+/* THANK YOU CARD DISPLAY */
+.thank-you-card {
+    background: hsl(213, 19%, 18%);
+    text-align: center;
+    padding: 33px 0 40px;
+    border-radius: 15px;
+    max-width: 350px;
+}
+
+.thank-you-card img {
+    display: block;
+    margin: 0 auto 21px;
+    
+}
+
+.thank-you-card div {
+    display: inline;
+    border-radius: 100px;
+}
+
+.thank-you-card p {
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+.thank-you-card h1 {
+    margin-bottom: 25px;
+}
+
+.selected-rating {
+    background: hsla(217, 12%, 63%, 0.1);
+    padding: 7px 11px;
+    margin-bottom: 32px;
+    color: #ff6f0f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
