@@ -6,23 +6,19 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="int-rating.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!--<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> -->
   
   
   <title>Frontend Mentor | Interactive rating component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <!-- Rating state start -->
  <section class="rating-card" id="first-display">
-   <img src="/images/icon-star.svg" alt="">
+   <img src="/images/icon-star.svg" alt="" width="17" height="16">
    <h1>How did we do?</h1>
 
     <p>Please let us know how we did with your support request. All feedback is appreciated 
@@ -40,7 +36,7 @@
 
   <!-- Thank you state start -->
   <section class="thank-you-card hidden" id="second-display">
-    <img src="/images/illustration-thank-you.svg" alt="">
+    <img src="/images/illustration-thank-you.svg" alt="" width="162" height="108">
     <div class="selected-rating" id="select-rating">You selected <!-- Add rating here --> out of 5</div>
 
     <h1>Thank you!</h1>
@@ -49,12 +45,6 @@
   </section>
   <!-- Thank you state end -->
 
-  <!--
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-  -->
   <script src="int-rating.js"></script>
 </body>
 </html>
