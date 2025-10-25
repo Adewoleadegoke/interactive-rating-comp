@@ -1,7 +1,7 @@
 body {
     background: hsl(216, 12%, 8%);
     font-family: 'Overpass', sans-serif;
-    padding: 0 23px;
+    padding: 0 1.44rem;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -11,9 +11,9 @@ body {
 h1 {
     color: white;
     font-weight: 700;
-    margin-top: 24px;
-    margin-bottom: 22px;
-    font-size: 25px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.38rem;
+    font-size: 1.56rem;/*25px*/
 }
 
 p {
@@ -21,14 +21,14 @@ p {
     font-weight: 400;
     margin-bottom: 24px;
     line-height: 1.5;
-    font-size: 15px;
+    font-size: 0.94rem;/*15px*/
 }
 /* RATING CARD DISPLAY */
 .rating-card {
     background: hsl(213, 19%, 18%);
     padding: 24px 23px 29px 25px;
     border-radius: 20px;
-    max-width: 350px;
+    max-width: 21.875rem;
 }
 
 .button-row {
@@ -56,6 +56,10 @@ p {
 .button-row button:active {
     background-color: white;
     color: hsl(213, 19%, 18%);
+}
+
+.button-row button.clicked {
+    background: white;
 }
 
 .submit-btn {
@@ -86,8 +90,8 @@ p {
     background: hsl(213, 19%, 18%);
     text-align: center;
     padding: 33px 0 40px;
-    border-radius: 15px;
-    max-width: 350px;
+    border-radius: 0.94rem;
+    max-width: 21.875rem;
 }
 
 .thank-you-card img {
@@ -98,7 +102,7 @@ p {
 
 .thank-you-card div {
     display: inline;
-    border-radius: 100px;
+    border-radius: 6.25rem;
 }
 
 .thank-you-card p {
@@ -107,15 +111,21 @@ p {
     line-height: 1.5;
 }
 .thank-you-card h1 {
-    margin-bottom: 25px;
+    margin-bottom: 1.56rem;
 }
 
 .selected-rating {
     background: hsla(217, 12%, 63%, 0.1);
-    padding: 7px 11px;
-    margin-bottom: 32px;
+    padding: 0.44rem 0.69rem;
+    margin-bottom: 2rem;
     color: #ff6f0f;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media only screen and (min-width: 1000px) {
+    .button-row button, submit-btn {
+        cursor: pointer;
+    }
 }

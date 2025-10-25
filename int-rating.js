@@ -8,6 +8,7 @@ var ratingPicked = null;
 for (var i=0; i < ratingChosen.length; i++) {
 ratingChosen[i].addEventListener('click', function() {
     ratingPicked = this.textContent;
+    this.classList.add('clicked')
 })
 }
 
@@ -20,4 +21,6 @@ submitBtn.addEventListener('click', function () {
         alert("Pick a rating first");
     }
 });
+
+
 
