@@ -52,7 +52,7 @@ p {
     flex-direction: row;
     column-gap: 17px;
     margin-bottom: 25px;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .button-row button {
@@ -69,13 +69,14 @@ p {
     background-color: hsl(25, 97%, 53%);
     color: hsl(213, 19%, 18%);
 }
-.button-row button:active {
+/*.button-row button:active {
     background-color: white;
     color: hsl(213, 19%, 18%);
 }
-
+*/
 .button-row button.clicked {
     background: white;
+    color: hsl(213, 19%, 18%);
 }
 
 .submit-btn {
@@ -83,7 +84,7 @@ p {
     -moz-border-radius: 28; 
     border-radius: 28px; 
     color: #232A34; 
-    font-size: 20px; 
+    font-size: 12px; 
     background: #ff6f0f; 
     padding: 10px 20px 10px 20px; 
     text-decoration-style: ;
@@ -138,6 +139,16 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.circled-star {
+    background: hsla(217, 12%, 63%, 0.3);
+    width: 43px;
+    height: 43px;
+    border-radius: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media only screen and (min-width: 1000px) {

@@ -7,8 +7,12 @@ var ratingPicked = null;
 
 for (var i=0; i < ratingChosen.length; i++) {
 ratingChosen[i].addEventListener('click', function() {
+   for (var j = 0; j < ratingChosen.length; j++) {
+     ratingChosen[j].classList.remove('clicked');
+     };
     ratingPicked = this.textContent;
-    this.classList.add('clicked')
+    this.classList.add('clicked');
+    
 })
 }
 
