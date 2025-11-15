@@ -4,7 +4,7 @@ var secondCard = document.getElementById('second-display');
 var ratingText = document.getElementById('select-rating')
 var submitBtn = document.getElementById('submit')
 var ratingPicked = null;
-
+/*
 for (var i=0; i < ratingChosen.length; i++) {
 ratingChosen[i].addEventListener('click', function() {
    for (var j = 0; j < ratingChosen.length; j++) {
@@ -15,6 +15,20 @@ ratingChosen[i].addEventListener('click', function() {
     
 })
 }
+*/
+
+ratingChosen.forEach(function (ratingChoose) {
+    ratingChoose.addEventListener('click', function () {
+        ratingChosen.forEach(function (btn) {
+           btn.classList.remove('clicked');
+        })  
+        ratingPicked = this.textContent;
+             this.classList.add('clicked');
+    })
+})
+
+
+
 
 submitBtn.addEventListener('click', function () {
     if (ratingPicked) {
